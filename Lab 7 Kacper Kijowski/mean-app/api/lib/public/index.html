@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+        background-size: 400% 400%;
+        animation: rainbow 10s linear infinite;
+    }
+
+    @keyframes rainbow {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+
+    .center-text {
+        font-size: 2rem;
+        color: white;
+    }
+</style>
+
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90vh;">
+    <div class="center-text">OGÓREK</div>
+</body>
+</html>
